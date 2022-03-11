@@ -1,0 +1,21 @@
+.welcome-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.09);
+
+  .welcome-container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+    color: #c4c4c4;
+
+    .welcome-text {
+      font-size: 1em;
+    }
+  }
+}

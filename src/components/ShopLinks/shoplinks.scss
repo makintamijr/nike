@@ -1,0 +1,42 @@
+.shoplinks-wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
+  .shoplinks-container {
+    width: 80vw;
+
+    .shoplinks-contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .shoplinks-shoes,
+      .shoplinks-clothing,
+      .shoplinks-kids,
+      .shoplinks-featured {
+        .links-text {
+          font-size: 1em;
+          padding: 5px;
+        }
+      }
+
+      .shoe-links,
+      .clothing-links,
+      .kids-links,
+      .featured-links {
+        margin-top: 30px;
+
+        @media only screen and (max-width: 890px) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 890px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

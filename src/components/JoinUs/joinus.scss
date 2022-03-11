@@ -1,0 +1,50 @@
+.joinus-wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
+  .joinus-head {
+    font-size: 1em;
+  }
+
+  .joinus-container {
+    width: 90vw;
+
+    .joinus-contents {
+      margin-top: 20px;
+
+      .joinus-img {
+        width: 100%;
+        height: 40vh;
+        background-image: url("../../img/joinus.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+
+        .joinus-text-box {
+          display: flex;
+          flex-direction: column;
+          padding: 35px;
+
+          .joinus-text-body {
+            font-size: 2em;
+
+            @media only screen and (max-width: 890px) {
+              font-size: 1.5em;
+            }
+          }
+
+          .joinus-btn {
+            width: 100px;
+            border-radius: 40px;
+            background-color: #c62e34;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

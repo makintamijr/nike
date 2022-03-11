@@ -1,0 +1,141 @@
+.footer-wrapper {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin-top: 130px;
+
+  .footer-contents {
+    width: 90vw;
+
+    .top-footer-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 90px;
+
+      .top-left {
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .find-a-store,
+        .get-help,
+        .about-nike,
+        .nike-apps {
+          .footer-text {
+            padding-bottom: 18px;
+          }
+          .footer-text-small {
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.5);
+
+            @media only screen and (max-width: 890px) {
+              display: none;
+            }
+          }
+        }
+
+        .get-help,
+        .about-nike,
+        .nike-apps {
+          @media only screen and (max-width: 890px) {
+            padding-top: 40px;
+          }
+        }
+
+        .find-a-store .footer-promo {
+          @media only screen and (max-width: 890px) {
+            width: 100%;
+            border-bottom: 1px solid white;
+          }
+        }
+
+        @media only screen and (max-width: 890px) {
+          flex-direction: column;
+        }
+      }
+
+      .top-right {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 890px) {
+          width: 40%;
+        }
+      }
+
+      @media only screen and (max-width: 890px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .footer-btn {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 9em;
+
+      @media only screen and (max-width: 890px) {
+        margin-top: 3em;
+      }
+    }
+
+    .bottom-footer-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 100px;
+
+      .footer-copyright {
+        width: 30%;
+        margin-top: 5em;
+
+        @media only screen and (max-width: 890px) {
+          width: 100%;
+          margin-top: -10em;
+        }
+      }
+      span {
+        font-size: 0.8em;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .footer-terms {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5em;
+
+        .footer-terms-text {
+          font-size: 0.8em;
+          color: rgba(255, 255, 255, 0.5);
+        }
+        @media only screen and (max-width: 890px) {
+          width: 100%;
+          height: 20vh;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 3em;
+        }
+      }
+      @media only screen and (max-width: 890px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 890px) {
+    height: 130vh;
+  }
+}

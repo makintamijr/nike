@@ -1,0 +1,131 @@
+.navigation-wrapper {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  position: static;
+  background: transparent;
+  border-bottom: 0.3px solid #c4c4c4;
+
+  // @media (max-width: 480px) {
+  //   width: 70vw;
+  // }
+
+  .top-navigation-bar {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    // @media (max-width: 1024px) {
+    //   width: 90vw;
+    // }
+    @media (max-width: 768px) {
+      width: 90vw;
+    }
+    @media (max-width: 480px) {
+      width: 96vw;
+    }
+  }
+
+  .left-side-navigation {
+    width: 8vw;
+
+    .logo {
+      width: 60px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .center-navigation {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      width: 50vw;
+    }
+
+    .center-typo {
+      min-width: 100px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      color: #c4c4c4;
+      position: relative;
+      border: none;
+      cursor: pointer;
+
+      @media only screen and (min-width: 480px) and (max-width: 1024px) {
+        font-size: 0.8em;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        left: 50%;
+        top: 0;
+        background-color: white;
+        transition: all ease-in-out 0.2s;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  .right-side-navigation {
+    width: 12vw;
+    display: flex;
+
+    @media only screen and (min-width: 480px) and (max-width: 890px) {
+      width: 100%;
+    }
+
+    .search-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-radius: 40px;
+      background-color: rgba($color: #fff, $alpha: 0.15);
+      &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.25);
+      }
+
+      .search-icon {
+        color: #c4c4c4;
+      }
+
+      .search-input {
+        color: #c4c4c4;
+      }
+    }
+
+    .cart-icon {
+      color: #c4c4c4;
+      font-size: xx-large;
+    }
+
+    .menu-icon {
+      color: #c4c4c4;
+      font-size: xx-large;
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//     width: 50px;
+//     height: 50px;
+//   }

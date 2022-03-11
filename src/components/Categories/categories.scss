@@ -1,0 +1,113 @@
+.categories-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+
+  .categories-container {
+    width: 90vw;
+
+    .categories-head {
+      font-size: 1em;
+    }
+
+    .categories-contents {
+      width: 100%;
+      height: 110vh;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .women {
+        width: 50%;
+        height: 110vh;
+        border-radius: 10px;
+        background-image: url("../../img/womens.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 2.5em;
+
+        .women-content {
+          margin-top: 42em;
+          margin-left: 3em;
+
+          @media only screen and (max-width: 890px) {
+            margin-top: 22em;
+            margin-left: 3em;
+          }
+        }
+
+        @media only screen and (max-width: 890px) {
+          width: 100%;
+          height: 55vh;
+        }
+      }
+
+      .categories-contents-box2 {
+        width: 50%;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .men {
+          width: 100%;
+          height: 55vh;
+          border-radius: 10px;
+          background-image: url("../../img/mens.png");
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .kids {
+          width: 100%;
+          height: 55vh;
+          border-radius: 10px;
+          background-image: url("../../img/kids.png");
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-top: 2.5em;
+        }
+        .men-content,
+        .kids-content {
+          margin-top: 16em;
+          margin-left: 3em;
+        }
+
+        @media only screen and (max-width: 890px) {
+          .kids-content,
+          .men-content {
+            margin-top: 21em;
+            margin-left: 3em;
+          }
+        }
+
+        @media only screen and (max-width: 890px) {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 890px) {
+        flex-direction: column;
+        height: 170vh;
+        justify-content: space-between;
+      }
+    }
+
+    .categories-contents-btn {
+      border-radius: 40px;
+      background-color: #c62e34;
+    }
+    @media only screen and (max-width: 890px) {
+      width: 90vw;
+    }
+  }
+
+  @media only screen and (max-width: 890px) {
+    margin-top: 20px;
+  }
+}

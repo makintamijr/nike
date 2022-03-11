@@ -1,0 +1,67 @@
+.morenike-wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
+  .morenike-container {
+    width: 90vw;
+
+    .morenike-contents {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .morenike-men,
+      .morenike-women,
+      .morenike-kids {
+        width: 100%;
+        height: 80vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+
+        .morenike-btn {
+          background-color: #c62e34;
+          border-radius: 40px;
+          margin-top: 33em;
+          margin-left: 3em;
+
+          @media only screen and (max-width: 890px) {
+            margin-top: 23em;
+            margin-left: 3em;
+          }
+        }
+
+        @media only screen and (max-width: 890px) {
+          height: 50vh;
+          margin: 0 auto;
+        }
+      }
+      .morenike-men {
+        background-image: url("../../img/morenikemen.png");
+        margin-right: 2em;
+      }
+      .morenike-women {
+        background-image: url("../../img/morenikewomen.png");
+      }
+      .morenike-kids {
+        background-image: url("../../img/morenikekids.png");
+        margin-left: 2em;
+
+        @media only screen and (max-width: 890px) {
+          margin: 0 auto;
+        }
+      }
+
+      @media only screen and (max-width: 890px) {
+        flex-direction: column;
+        height: 160vh;
+      }
+    }
+  }
+}
